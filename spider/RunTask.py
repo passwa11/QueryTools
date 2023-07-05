@@ -354,7 +354,7 @@ class ThreadIp(Thread):
 
 
 def aaaascv(data):
-    with open('./result.csv', 'a+', newline='') as csv_file:
+    with open('./result.csv', 'a+', newline='', encoding='utf-8-sig') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(data.values())
 
